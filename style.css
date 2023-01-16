@@ -1,0 +1,444 @@
+
+/* Reset */
+a, abbr, acronym, address, area, b, bdo, big, blockquote, body, button, caption, cite,
+code, col, colgroup, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4,
+h5, h6, hr, html, i, images, ins, kbd, label, legend, li, map, object, ol, p, param, pre,
+q, samp, small, span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead,
+tr, tt, ul, var {margin:0;padding:0;vertical-align:baseline}
+
+/* Defaults */
+:focus {outline:0}
+a, a:visited {text-decoration:none}
+a:hover {text-decoration:underline}
+abbr, acronym, dfn {border-bottom:1px dotted;cursor:help}
+blockquote {background:#EEE;border-left:2px solid #CCC;margin:0 0 1em}
+blockquote p {margin:.5em;padding:10px;}
+body {background:#1e1e1e;font:75%/125% Arial, Sans-Serif}
+code, pre {font-size:1em}
+del {text-decoration:line-through}
+dfn {font-style:italic;font-weight:bold}
+dt {font-weight:bold}
+dd {margin:0 0 1em 10px}
+fieldset {border:0}
+fieldset p {margin:0 0 5px}
+img {border:0;vertical-align:bottom}
+ins {text-decoration:none}
+h1 {font:24px/1.25em }
+h2 {font:bold 15px}
+h3 {font-size:1em}
+h4 {font:bold 1em/1.25em}
+h5 {font-size:1.1em}
+hr {margin:0 0 0.5em}
+p {margin:0 0 1em}
+ul, ol {list-style:none;margin:0 0 0.5em}
+textarea {font:1em Arial;overflow:auto}
+tt {display:block;margin:0.5em 0;padding: 0.5em 1em}
+
+
+body {
+	font-family:  "Verdana", "Tahoma", "Arial", sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #881100;
+}
+
+red {
+	color: #881100;
+}
+
+#head {
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 170px;
+}
+
+.blackbar {
+	width: 100%;
+	background-color: #000000;
+	height: 9px;
+	clear: both;
+}
+
+#headText {
+	font-size: 40px;
+	color: #ffffff;
+	text-transform: lowercase;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+}
+
+#headSlogan {
+	margin-top: 10px;
+	font-size: 20px;
+	text-transform: lowercase;
+	text-align: left;
+	margin-left: 212px;
+}
+
+#nav {
+	
+	width: 100%;
+	background-color: #FFFFFF;
+	margin: auto;
+}
+
+#navInner {
+	width: 900px;
+	margin: auto;
+	height: 30px;
+	color: #ffffff;
+	background-image: url('images/bar_red.png');
+
+}
+
+#navi {
+	height:30px;
+	line-height:1;
+	list-style:none;
+	margin:0;
+	padding:0 0 0 10px;
+	z-index:100;
+	font-size: 14px;
+	text-transform: ;
+}
+
+
+/* Navigation */
+
+#navi a{
+	color:#GGGGGG;
+	display:block;
+	line-height:30px;
+	padding:0 10px;
+	z-index:100;
+}
+
+#navi li a:hover,#navInner li a:focus,#navInner li.current_page_item a{color:#612F7B;}
+#navi li{float:left;}
+
+/* Style drop down list  */
+#navi li ul{left:-999em;position:absolute;width:170px;border:1px solid #999999; border-width:0 1px 1px 1px; z-index: 100;}
+#navi li ul li{background:#FFF;}
+#navi li ul li a{color:#555 !important;font-size:12px;line-height:30px;width:150px;}
+#navi li ul li a:hover{background:#eee; text-decoration:none; color:#000;}
+#navi li ul ul{margin:-31px 0 0 170px;border-width:1px;}
+#navi li ul ul li a{line-height:30px;}
+#navi li:hover ul ul,#navi li.sfhover ul ul{left:-999em;}
+/* IE7 Fix  */
+#navi li:hover,#navi li.hover{position:static;}
+#navi li:hover ul,#navi li.sfhover ul,#navi li:hover ul,#navi li li:hover ul,#navi li.sfhover ul,#navi li li.sfhover ul{left:auto;}
+
+
+
+#mainBox {
+	width: 900px;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+/* Main Content for pages */
+
+#mainContent {
+	width: 610px;	
+	float: left;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+#mainContent h1 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #737373;
+	line-height: 1.8;
+	padding: 10px 0 10px 0;
+	/*letter-spacing: 1px;*/
+}
+
+#mainContent h2 {
+	color: #E66522;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+#mainContent p {
+	color: #737373;
+	text-align: left;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+#mainContent pq {
+	color: #737373;
+	font-size: 1.1em;
+	text-align: left;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+
+.mainlist {
+	list-style: square;
+	margin-left: 3em;
+	line-height: 1.4;
+	color: #737373;
+}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+/* Main Content for 50-50 pages */
+
+
+#mainContentNarrow {
+	width: 450px;	
+	float: left;
+	padding-top: 10px;
+	/* padding-right: 10px;*/
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+#mainContentNarrow h1 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #430103;
+	line-height: 1.8;
+	padding: 10px 0 10px 0;
+	/*letter-spacing: 1px;*/
+}
+
+#mainContentNarrow h2 {
+	color: #58585A;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+#mainContentNarrow p {
+	color: #58585A;
+	text-align: justify;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+
+/* Side Bar */
+
+
+#sidebar {
+	float: right;
+	width: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.box {
+	float: left;
+	width: 298px;
+	height: 285px;
+}
+
+.boxHead {
+	text-transform: uppercase;
+	color: #430103;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.boxContent {
+	color: #8b8587;
+	text-align: justify;
+	padding: 10px;
+}
+
+.centered {
+	text-align: center;
+}
+
+img .centers {
+	margin: auto;
+	display: block;
+}
+
+.greyBorder {
+	border-right: 1px solid #e6e4e5;
+}
+
+
+#sidebar ul {
+	width: 235px;
+	color: #b0aeaf;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#sidebar p {
+
+	color: #58585A;
+	width: 200px;
+	font-size: 1.1em;
+	text-align: left;
+	margin-left: 2em;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+#sidebar h2 {
+	color: #58585A;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2em;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+.widget h2 {
+	border-top: 2px solid #e5e3e4;
+	border-bottom: 1px dotted #e5e3e4;
+	font-size: 14px;
+	padding-top: 4px;
+	padding-left: 10px;
+	padding-bottom: 4px;
+	letter-spacing: 3px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	color: #500c0f;
+	font-weight: normal;
+}
+
+
+
+/* Side bar for 50-50 pages */
+
+#sidebarwide {
+	float: right;
+	width: 400px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#sidebarwide ul {
+	width: 235px;
+	color: #b0aeaf;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#sidebarwide p {
+
+	color: #58585A;
+	text-align: left;
+	margin-left: 2em;
+	margin-right: 2em;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+#sidebarwide h2 {
+	color: #F29556;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2em;
+	line-height: 1.4;
+	/*letter-spacing: 0.1em;*/
+}
+
+
+#footer {
+	width: 100%;
+	background-color: #CC0000;
+	height: 50px;
+	clear: both;
+	color: #ffffff;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 11px;
+}
+
+#footer a {
+	color: #ffffff;
+}
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	display: block;
+	}
+
+.alignleft {
+	float: left;
+	display: block;
+	}
+/* End Images */
+
+
+.gallery img {
+	border: 0px !important;
+}
+
+.clear {
+	clear: both;
+}
+
+.postmetadata {
+	margin-top: 10px;
+        clear: both;
+}
+
+.blogroll {
+	list-style: square;
+	margin-left: 2em;
+}

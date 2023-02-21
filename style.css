@@ -112,9 +112,9 @@ red {
 
 
 /* Navigation */
-
+/* nav text color:#GGGGGG; */
 #navi a{
-	color:#GGGGGG;
+	color:#FFFFFF;
 	display:block;
 	line-height:30px;
 	padding:0 10px;
